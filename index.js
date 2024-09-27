@@ -8,8 +8,8 @@ db.serialize(() => {
     db.run("CREATE TABLE user (id INT, name TEXT)");
 
     const stmt = db.prepare("INSERT INTO user (id, name) VALUES (?, ?)");
-    stmt.run(1, 'Arthur Souza');
-    stmt.run(2, 'Layza Souza');
+    stmt.run(1, 'Anderson Emidio');
+    stmt.run(2, 'ETE Gil Rodrigues');
     stmt.finalize();
 });
 
